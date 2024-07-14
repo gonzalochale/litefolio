@@ -1,11 +1,14 @@
 ---
+import Hero from "../components/Hero.astro";
 import Layout from "../layouts/Layout.astro";
+import Stack from "../components/Stack.astro";
 ---
 
-<Layout title="Gonzalo Chañé -  mi portafolio">
-  <main
-    class="w-full max-w-5xl border-2 flex flex-1 justify-center items-center"
+<Layout title="Gonzalo Chalé -  Atro Portfolio Template">
+  <div
+    class="w-full max-w-7xl flex flex-col flex-1 justify-center items-center"
   >
-    hola mundo
-  </main>
+    <Hero />
+    <Stack />
+  </div>
 </Layout>

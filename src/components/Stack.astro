@@ -1,0 +1,48 @@
+---
+/* 
+    This component was  
+    provided by "Chonza" free and open source components library.
+    Link: https://chonza.dev/
+    and modified by "Gonzalo Chalé" to fit the needs of this project.
+*/
+import cv from "@cv";
+
+/* 
+    Logos were provided by "svgl" free and open source icons library.
+    Link: https://svgl.app/
+*/
+const { stack } = cv;
+
+const dobleStack = stack.concat(stack);
+---
+
+<section
+  class="w-full text-center flex flex-col justify-center items-center gap-5 max-w-3xl py-24 overflow-hidden pointer-events-none"
+  style={{
+    WebkitMask:
+      "linear-gradient(90deg, transparent, black 20%, black 80%, transparent)",
+    mask: "linear-gradient(90deg, transparent, black 20%, black 80%, black transparent)",
+  }}
+>
+  <h3
+    class="text-muted-foreground w-full max-w-xltext-muted-foreground sm:text-center text-normal sm:text-lg md:text-xl font-light tracking-tighter"
+  >
+    My Stack
+  </h3>
+  <div
+    class="w-full h-fit max-w-3xl flex flex-col justify-center select-none overflow-hidden"
+  >
+    <div class="w-max flex flex-nowrap gap-[4rem] animate-slide-logos">
+      {
+        dobleStack.map((logo, index) => (
+          <img
+            src={logo.src}
+            alt={logo.alt}
+            loading="eager"
+            class="size-20 object-contain"
+          />
+        ))
+      }
+    </div>
+  </div>
+</section>

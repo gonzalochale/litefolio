@@ -1,4 +1,5 @@
 ---
+import Shades from "@/components/Shades.astro";
 interface Props {
   title: string;
 }
@@ -7,7 +8,7 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
@@ -17,17 +18,20 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body
-    class="flex flex-col h-dvh items-center bg-background text-foreground border-border"
+    class="relative flex flex-col w-full min-h-dvh items-center bg-background overflow-hidden"
   >
-    <slot />
+    <Shades>
+      <slot />
+    </Shades>
   </body>
+  <style is:global>
+    @font-face {
+      font-family: "Geist";
+      src: url("/fonts/GeistVF.woff") format("woff");
+    }
+    * {
+      @apply text-foreground border-border;
+      font-family: "Geist", sans-serif;
+    }
+  </style>
 </html>
-<style is:global>
-  @font-face {
-    font-family: "Geist";
-    src: url("/fonts/GeistVF.woff") format("woff");
-  }
-  * {
-    font-family: "Geist", sans-serif;
-  }
-</style>
