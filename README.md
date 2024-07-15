@@ -1,46 +1,100 @@
-# Astro Starter Portfolio Template
+# Astro Portfolio Starter Template
 
-![Astro Portfolio Template by Gonzalo Chalé](public/assets/preview.webp)
+This is a free portfolio starter template built with Astro and Tailwind CSS. The portfolio configuration is managed through a `cv.json` file.
 
-This is a portfolio starter template built with Astro and Tailwind CSS. The portfolio configuration is managed through a `cv.json` file.
+## Live Demo
 
-## Features
+**[astro-portfolio-template-gonzalochale.vercel.app](astro-portfolio-template-gonzalochale.vercel.app)**
 
-- **Astro Framework**: Utilizes Astro for optimal performance and simplified development.
-- **Tailwind CSS**: Modern and responsive design using Tailwind CSS.
-- **Easy Configuration**: All portfolio information is managed through a `cv.json` file.
+## Preview
 
-## Requirements
-
-- [Node.js](https://nodejs.org/) (v14.17.0 or higher)
-- npm (comes with Node.js) or [yarn](https://yarnpkg.com/)
+![Astro Portfolio Template by Gonzalo Chalé](public/assets/mockup.png)
 
 ## Installation
 
-1. Clone the repository:
+If you are reading this on github, you can click on the "Use this template" button above to create a new repository from astroship to your account. Then you can do a `git clone` to clone it to your local system.
 
-    ```sh
-    git clone https://github.com/gonzalochale/astro-portfolio-template
-    cd astro-portoflio-template
-    ```
+Alternatively, you can clone the project directly from this repo to your local system.
 
-2. Install dependencies:
+### 1. Clone the repo
 
-    ```sh
-    npm install
-    # or
-    yarn install
-    ```
+```bash
+git clone git@github.com:gonzalochale/astro-portfolio-template.git myPortfolio
+# or
+git clone git@github.com:gonzalochale/astro-portfolio-template.git .
+```
 
-3. Run the development server:
+The `.` will clone it to the current directory so make sure you are inside your project folder first.
 
-    ```sh
-    npm run dev
-    # or
-    yarn dev
-    ```
+### 2. Install Dependencies
 
-4. Open your browser and navigate to `http://localhost:4321` to see your portfolio.
+```bash
+npm install
+# or
+yarn install
+# or (recommended)
+pnpm install
+```
+
+### 3. Start development Server
+
+```bash
+npm run dev
+# or
+yarn dev
+# or (recommended)
+pnpm dev
+```
+
+### Preview & Build
+
+```bash
+npm run preview
+npm run build
+# or
+yarn preview
+yarn build
+# or (recommended)
+pnpm preview
+pnpm build
+```
+
+We recommend using [pnpm](https://pnpm.io/) to save disk space on your computer.
+
+### Other Commands
+
+```bash
+pnpm astro ...
+pnpm astro add
+pnpm astro --help
+```
+
+## Project Structure
+
+Inside of your Astro project, you'll see the following folders and files:
+
+``` bash
+/
+├── public/
+│   └── ...
+├── src/
+│   ├── components/
+│   │   └── ...
+│   ├── layouts/
+│   │   └── ...
+│   └── pages/
+│       └── ...
+└── cv.json <---- Portfolio Content
+└── package.json
+```
+
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+
+Any static assets, like images, can be placed in the `public/` directory.
+
+## TailwindCSS
+
+TailwindCSS is already configured in this repo, so you can start using it without any installation.
 
 ## Configuration
 
@@ -97,16 +151,6 @@ To customize your portfolio, edit the `cv.json` file located in the root directo
 }
 ```
 
-## Deployment
-
-You can deploy the contents of the dist directory to any static hosting provider, such as Vercel, Netlify, or GitHub Pages.
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for more information.
-
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request for any bugs, improvements, or new features.
-
-Made with ❤️ by Gonzalo Chalé
