@@ -3,11 +3,11 @@ import cv from "@cv";
 
 const { basics } = cv;
 
-const { name, summary } = basics;
+const { name, summary, socials } = basics;
 ---
 
 <section
-  class="w-full h-dvh flex flex-col gap-5 flex-1 justify-center items-center px-4"
+  class="w-full flex flex-col gap-5 justify-center items-center px-4 py-20 sm:py-24"
 >
   <h1
     class="w-full max-w-xl sm:text-center text-3xl sm:text-5xl md:text-7xl font-medium tracking-tighter"
@@ -19,4 +19,18 @@ const { name, summary } = basics;
   >
     {summary}
   </h2>
+  <div class="w-full flex gap-5 items-center justify-start sm:justify-center">
+    {
+      socials.map((social) => (
+        <a
+          href={social.url}
+          class="pointer-events-auto px-4 py-2 bg-foreground border rounded-[1rem] hover:bg-card transition-all ease-in-out duration-300 text-card hover:text-foreground"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {social.label}
+        </a>
+      ))
+    }
+  </div>
 </section>
