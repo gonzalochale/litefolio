@@ -1,5 +1,7 @@
 # Astro Starter Portfolio Template
 
+![Astro Portfolio Template by Gonzalo Chalé](public/assets/preview.webp)
+
 This is a portfolio starter template built with Astro and Tailwind CSS. The portfolio configuration is managed through a `cv.json` file.
 
 ## Features
