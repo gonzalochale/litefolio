@@ -1,0 +1,57 @@
+---
+import Image from "astro/components/Image.astro";
+import cv from "@cv";
+
+const { projects } = cv;
+---
+
+<section
+  class="w-full flex flex-col gap-10 items-center justify-center py-20 sm:py-24 overflow-hidden"
+>
+  <div class="w-full max-w-xl flex flex-col justify-center items-center gap-3">
+    <h2
+      class="text-foreground text-normal sm:text-lg md:text-xl tracking-tighter"
+    >
+      My Projects
+    </h2>
+    <p
+      class="text-muted-foreground sm:text-center text-normal sm:text-lg md:text-xl font-light tracking-tighter"
+    >
+      Here are some of the projects I've worked on.
+    </p>
+  </div>
+  <div
+    class="flex gap-3 sm:gap-5 snap-x snap-mandatory p-4 sm:px-10 pb-10 pointer-events-auto overflow-scroll"
+  >
+    {
+      projects.map((project) => (
+        <a
+          href={project.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="snap-always snap-center shrink-0 w-[90%] sm:w-[80%] border rounded-[0.5rem] sm:rounded-[1rem] bg-card flex flex-col justify-center overflow-hidden perfect-shadow"
+        >
+          <Image
+            src={project.imageUrl}
+            width={1920}
+            height={1080}
+            loading="eager"
+            alt={project.name}
+            class="w-full"
+          />
+        </a>
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  .perfect-shadow {
+    box-shadow: var(--perfect-shadow);
+    --base: hsl(214 80% 27% / 4%);
+    --shade: hsl(from var(--base) calc(h + 8) 25 calc(l - 5));
+    --perfect-shadow: 0 0 0 1px var(--base), 0 1px 1px -0.5px var(--shade),
+      0 3px 3px -1.5px var(--shade), 0 6px 6px -3px var(--shade),
+      0 12px 12px -6px var(--base), 0 24px 24px -12px var(--base);
+  }
+</style>

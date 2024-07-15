@@ -17,13 +17,13 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body
-    class="relative flex flex-col w-full min-h-dvh items-center bg-background overflow-hidden"
-  >
-    <Shades>
+  <Shades>
+    <body
+      class="relative flex flex-col w-full min-h-dvh items-center bg-background"
+    >
       <slot />
-    </Shades>
-  </body>
+    </body>
+  </Shades>
   <style is:global>
     @font-face {
       font-family: "Geist";

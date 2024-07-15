@@ -32,32 +32,17 @@
       { "src": "/logos/jquery.svg", "alt": "JQuery Logo" },
       { "src": "/logos/ngrok.svg", "alt": "NGrok Logo" }
     ],
-    "work": [{
-      "name": "Company",
-      "position": "President",
-      "url": "https://company.com",
-      "startDate": "2013-01-01",
-      "endDate": "2014-01-01",
-      "summary": "Description…",
-      "highlights": [
-        "Started the company"
-      ]
-    }],
-    "education": [{
-      "institution": "University",
-      "area": "Software Development",
-      "studyType": "Bachelor",
-      "startDate": "2011-01-01",
-      "endDate": "2013-01-01"
-    }],
     "projects": [{
-      "name": "Project",
-      "startDate": "2019-01-01",
-      "endDate": "2021-01-01",
-      "description": "Description...",
-      "highlights": [
-        "Won award at AIHacks 2016"
-      ],
-      "url": "https://project.com/"
+      "name": "Create your React UI library",
+      "imageUrl": "/assets/project.webp",
+      "url": "https://ui-library-template.vercel.app/"
+    },{
+      "name": "Create your React UI library",
+      "imageUrl": "/assets/project.webp",
+      "url": "https://ui-library-template.vercel.app/"
+    },{
+      "name": "Create your React UI library",
+      "imageUrl": "/assets/project.webp",
+      "url": "https://ui-library-template.vercel.app/"
     }]
   }
