@@ -9,6 +9,30 @@
         "countryCode": "MX",
         "country": "México"
       },
+      "experience": [{
+        "company": "Acme",
+        "position": "Software Engineer",
+        "startDate": "2020-01-01",
+        "endDate": "2024-07-31",
+        "summary": "I worked on the Acme team, where I helped build the Y feature. I was responsible for Z, which involved A, B, and C.",
+        "highlights": [
+          "Developed a new feature for the Acme platform",
+          "Worked on the Y project, which involved A, B, and C",
+          "Collaborated with the Z team to improve the X platform"
+        ]
+      },
+      {
+        "company": "Y (Fomerly X)",
+        "position": "Software Engineer",
+        "startDate": "2018-01-01",
+        "endDate": "2019-12-31",
+        "summary": "I worked on the Y team, where I helped build the Z feature. I was responsible for A, which involved B, C, and D.",
+        "highlights": [
+          "Developed a new feature for the Y platform",
+          "Worked on the Z project, which involved B, C, and D",
+          "Collaborated with the A team to improve the Y platform"
+        ]
+      }],
       "socials": [{
         "network": "X (Fomerly Twitter)",
         "label": "X (Fomerly Twitter)",

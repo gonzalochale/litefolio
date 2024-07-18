@@ -8,7 +8,7 @@ This is a free portfolio starter template built with Astro and Tailwind CSS. The
 
 ## Preview
 
-![Astro Portfolio Template by Gonzalo Chalé](public/assets/mockup.png)
+![Astro Portfolio Template by Gonzalo Chalé](public/assets/preview.png)
 
 ## Deploy
 
@@ -109,7 +109,7 @@ To customize your portfolio, edit the `cv.json` file located in the root directo
 ```json
 {
     "basics": {
-      "name": "I'm Gonzalo Chalé",
+      "name": "Gonzalo Chalé",
       "label": "Systems Engineer",
       "image": "https://github.com/gonzalochale.png",
       "summary": "This is a starter template web protfolio. It is designed to be a starting point to showcase your work and help you stand out from the crowd. Perfect for developers, designers, and other professionals.",
@@ -118,9 +118,33 @@ To customize your portfolio, edit the `cv.json` file located in the root directo
         "countryCode": "MX",
         "country": "México"
       },
+      "experience": [{
+        "company": "Acme",
+        "position": "Software Engineer",
+        "startDate": "2020-01-01",
+        "endDate": "2020-12-31",
+        "summary": "I worked on the Acme team, where I helped build the Y feature. I was responsible for Z, which involved A, B, and C.",
+        "highlights": [
+          "Developed a new feature for the Acme platform",
+          "Worked on the Y project, which involved A, B, and C",
+          "Collaborated with the Z team to improve the X platform"
+        ]
+      },
+      {
+        "company": "Y (Fomerly X)",
+        "position": "Software Engineer",
+        "startDate": "2018-01-01",
+        "endDate": "2019-12-31",
+        "summary": "I worked on the Y team, where I helped build the Z feature. I was responsible for A, which involved B, C, and D.",
+        "highlights": [
+          "Developed a new feature for the Y platform",
+          "Worked on the Z project, which involved B, C, and D",
+          "Collaborated with the A team to improve the Y platform"
+        ]
+      }],
       "socials": [{
         "network": "X (Fomerly Twitter)",
-        "label": "Connect on X",
+        "label": "X (Fomerly Twitter)",
         "username": "gonzalochale",
         "url": "https://x.com/gonzalochale"
       },
@@ -129,7 +153,26 @@ To customize your portfolio, edit the `cv.json` file located in the root directo
         "label": "GitHub",
         "username": "gonzalochale",
         "url": "https://github.com/gonzalochale"
-      }]
+      },
+      {
+        "network": "LinkedIn",
+        "label": "LinkedIn",
+        "username": "gonzalochale",
+        "url": "https://www.linkedin.com/in/gonzalochale/"
+      },
+      {
+        "network": "YouTube",
+        "label": "YouTube",
+        "username": "chalegonzalo",
+        "url": "https://www.youtube.com/@chalegonzalo"
+      },
+      {
+        "network": "Facebook",
+        "label": "Facebook",
+        "username": "gonzalochale",
+        "url": "https://www.facebook.com/gonzalochale/"
+      }
+    ]
     },
     "stack": [
       { "src": "/logos/next-light.svg", "alt": "Next JS WordMark" },
