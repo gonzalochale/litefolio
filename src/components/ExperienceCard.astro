@@ -1,0 +1,59 @@
+---
+interface Props {
+  company: string;
+  position: string;
+  summary: string;
+  startDate: string;
+  endDate: string;
+  highlights: string[];
+}
+
+const { company, position, summary, startDate, endDate, highlights } =
+  Astro.props;
+
+const formatter = new Intl.DateTimeFormat("en", {
+  month: "long",
+  year: "numeric",
+});
+
+const formattedStartDate = formatter.format(new Date(startDate));
+const formattedEndDate = endDate
+  ? formatter.format(new Date(endDate))
+  : "Today";
+---
+
+<div
+  class="relative max-w-xl p-10 flex flex-col gap-10 border-l-2 border-foreground"
+>
+  <div class="md:col-span-2 flex flex-col gap-3">
+    <div class="flex flex-col gap-1">
+      <h3 class="text-muted-foreground text-sm sm:text-normal">
+        {company}
+      </h3>
+      <h4 class="text-sm sm:text-normal md:text-lg tracking-tighter">
+        {position}
+      </h4>
+    </div>
+    <time class="text-xs text-muted-foreground"
+      >{formattedStartDate} - {formattedEndDate}</time
+    >
+  </div>
+  <div
+    class="relative flex flex-col gap-5 pb-4 text-muted-foreground md:col-span-3"
+  >
+    <p class="text-sm sm:text-normal md:text-lg tracking-tighter">
+      {summary}
+    </p>
+    <ul class="list-disc list-outside">
+      {
+        highlights.map((highlight) => (
+          <li class="text-muted-foreground text-sm sm:text-normal">
+            {highlight}
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+  <span class="absolute size-3 rounded-full bg-foreground top-0 left-[-7px]"
+  ></span>
+</div>

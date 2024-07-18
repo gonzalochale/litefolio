@@ -1,8 +1,10 @@
 ---
-import Image from "astro/components/Image.astro";
 import cv from "@cv";
+import ExperienceCard from "./ExperienceCard.astro";
 
-const { projects } = cv;
+const { basics } = cv;
+
+const { experience } = basics;
 ---
 
 <section
@@ -14,35 +16,15 @@ const { projects } = cv;
     <h2
       class="text-foreground text-normal sm:text-lg md:text-xl tracking-tighter"
     >
-      My Projects
+      Experience
     </h2>
     <p
       class="text-muted-foreground sm:text-center text-sm sm:text-normal md:text-lg font-light tracking-tighter"
     >
-      Here are some of the projects I've worked on.
+      Here are some of the places I've worked at.
     </p>
   </div>
-  <div
-    class="flex gap-3 sm:gap-5 snap-x snap-mandatory p-4 sm:px-10 pb-10 pointer-events-auto overflow-scroll"
-  >
-    {
-      projects.map((project) => (
-        <a
-          href={project.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          class="snap-always snap-center shrink-0 w-[90%] sm:w-[80%] rounded-[0.5rem] sm:rounded-[1rem] bg-card flex flex-col justify-center overflow-hidden perfect-shadow"
-        >
-          <Image
-            src={project.imageUrl}
-            width={1920}
-            height={1080}
-            loading="eager"
-            alt={project.name}
-            class="w-full"
-          />
-        </a>
-      ))
-    }
+  <div class="flex flex-col pointer-events-auto">
+    {experience.map((exp) => <ExperienceCard {...exp} />)}
   </div>
 </section>
