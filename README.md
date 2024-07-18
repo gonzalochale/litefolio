@@ -160,3 +160,13 @@ To customize your portfolio, edit the `cv.json` file located in the root directo
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request for any bugs, improvements, or new features.
+
+## Credits
+
+We would like to express our gratitude to the following open-source projects and their contributors:
+
+- **SVG Icons**: Thank you to [SVGL](https://www.svgl.app) for providing the high-quality SVG icons used in this project.
+- **UI Components**: We appreciate the amazing components from [AstroUI](https://astroui.vercel.app) and [AceternityUI](https://ui.aceternity.com/) which helped in building a seamless user interface.
+- **Framework and CSS**: Special thanks to the teams behind [Astro](https://astro.build) and [Tailwind CSS](https://tailwindcss.com) for their incredible work in creating powerful tools for modern web development.
+
+Your contributions to the open-source community are invaluable and greatly appreciated. Thank you for making this project possible!
