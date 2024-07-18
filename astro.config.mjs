@@ -14,7 +14,7 @@ export default defineConfig({
         "Designed for simplicity and ease of use, configure your professional profile seamlessly through a user-friendly JSON file.",
       url: "https://litefolio.vercel.app",
       twitter: "gonzalochale",
-      image: "/assets/astro-og.png",
+      image: "/public/assets/astro-og.png",
     },
   },
   integrations: [tailwind()],

@@ -1,5 +1,6 @@
 {
     "basics": {
+      "showAuroraBackground": false,
       "name": "Gonzalo Chalé",
       "label": "Systems Engineer",
       "image": "https://github.com/gonzalochale.png",
@@ -56,12 +57,6 @@
         "label": "YouTube",
         "username": "chalegonzalo",
         "url": "https://www.youtube.com/@chalegonzalo"
-      },
-      {
-        "network": "Facebook",
-        "label": "Facebook",
-        "username": "gonzalochale",
-        "url": "https://www.facebook.com/gonzalochale/"
       }
     ]
     },

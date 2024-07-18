@@ -109,6 +109,7 @@ To customize your portfolio, edit the `cv.json` file located in the root directo
 ```json
 {
     "basics": {
+      "showAuroraBackground": false,
       "name": "Gonzalo Chalé",
       "label": "Systems Engineer",
       "image": "https://github.com/gonzalochale.png",
@@ -122,7 +123,7 @@ To customize your portfolio, edit the `cv.json` file located in the root directo
         "company": "Acme",
         "position": "Software Engineer",
         "startDate": "2020-01-01",
-        "endDate": "2020-12-31",
+        "endDate": "2024-07-31",
         "summary": "I worked on the Acme team, where I helped build the Y feature. I was responsible for Z, which involved A, B, and C.",
         "highlights": [
           "Developed a new feature for the Acme platform",
@@ -165,12 +166,6 @@ To customize your portfolio, edit the `cv.json` file located in the root directo
         "label": "YouTube",
         "username": "chalegonzalo",
         "url": "https://www.youtube.com/@chalegonzalo"
-      },
-      {
-        "network": "Facebook",
-        "label": "Facebook",
-        "username": "gonzalochale",
-        "url": "https://www.facebook.com/gonzalochale/"
       }
     ]
     },
