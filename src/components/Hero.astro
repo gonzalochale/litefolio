@@ -9,16 +9,18 @@ const { name, summary, socials } = basics;
 <section
   class="w-full flex flex-col gap-5 justify-center items-center px-4 py-20 sm:py-24"
 >
-  <h1
-    class="w-full max-w-xl sm:text-center text-3xl sm:text-5xl md:text-7xl font-medium tracking-tighter"
-  >
-    I'm {name}
-  </h1>
-  <h2
-    class="w-full max-w-xl text-muted-foreground sm:text-center text-normal sm:text-lg md:text-xl font-light tracking-tighter"
-  >
-    {summary}
-  </h2>
+  <div class="flex flex-col gap-2">
+    <h1
+      class="w-full max-w-xl sm:text-center text-3xl sm:text-5xl md:text-7xl font-medium tracking-tighter"
+    >
+      I'm {name}
+    </h1>
+    <h2
+      class="w-full max-w-xl text-muted-foreground sm:text-center text-normal sm:text-lg md:text-xl font-light tracking-tighter"
+    >
+      {summary}
+    </h2>
+  </div>
   <div
     class="w-full flex flex-wrap gap-3 items-center justify-start sm:justify-center"
   >
@@ -36,3 +38,33 @@ const { name, summary, socials } = basics;
     }
   </div>
 </section>
+
+<style>
+  @keyframes heroIn {
+    0% {
+      opacity: 0;
+      transform: translateY(0.5rem);
+    }
+    60% {
+      opacity: 1;
+      transform: translateY(-0.05rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  h1 {
+    opacity: 0;
+    animation: heroIn 0.7s cubic-bezier(0.5, 1.15, 0.2, 1.1) forwards;
+  }
+  h2 {
+    opacity: 0;
+    animation: heroIn 0.7s cubic-bezier(0.5, 1.15, 0.2, 1.1) 0.3s forwards;
+  }
+  a {
+    opacity: 0;
+    animation: heroIn 0.7s cubic-bezier(0.5, 1.15, 0.2, 1.1) 0.6s forwards;
+  }
+</style>
