@@ -19,12 +19,14 @@ const { name, summary, socials } = basics;
   >
     {summary}
   </h2>
-  <div class="w-full flex gap-5 items-center justify-start sm:justify-center">
+  <div
+    class="w-full flex flex-wrap gap-3 items-center justify-start sm:justify-center"
+  >
     {
       socials.map((social) => (
         <a
           href={social.url}
-          class="pointer-events-auto px-4 py-2 bg-foreground rounded-[1rem] hover:bg-card transition-all ease-in-out duration-300 text-card hover:text-foreground hover:border-transparent perfect-shadow"
+          class="text-sm pointer-events-auto px-3 py-2 bg-foreground rounded-[1rem] hover:bg-card transition-all ease-in-out duration-300 text-card hover:text-foreground hover:border-transparent perfect-shadow"
           target="_blank"
           rel="noopener noreferrer"
         >

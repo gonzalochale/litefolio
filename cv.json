@@ -11,7 +11,7 @@
       },
       "socials": [{
         "network": "X (Fomerly Twitter)",
-        "label": "Connect on X",
+        "label": "X (Fomerly Twitter)",
         "username": "gonzalochale",
         "url": "https://x.com/gonzalochale"
       },
@@ -20,7 +20,26 @@
         "label": "GitHub",
         "username": "gonzalochale",
         "url": "https://github.com/gonzalochale"
-      }]
+      },
+      {
+        "network": "LinkedIn",
+        "label": "LinkedIn",
+        "username": "gonzalochale",
+        "url": "https://www.linkedin.com/in/gonzalochale/"
+      },
+      {
+        "network": "YouTube",
+        "label": "YouTube",
+        "username": "chalegonzalo",
+        "url": "https://www.youtube.com/@chalegonzalo"
+      },
+      {
+        "network": "Facebook",
+        "label": "Facebook",
+        "username": "gonzalochale",
+        "url": "https://www.facebook.com/gonzalochale/"
+      }
+    ]
     },
     "stack": [
       { "src": "/logos/next-light.svg", "alt": "Next JS WordMark" },
