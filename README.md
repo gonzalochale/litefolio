@@ -4,7 +4,7 @@ This is a free portfolio starter template built with Astro and Tailwind CSS. The
 
 ## Live Demo
 
-**[astro-portfolio-template-gonzalochale.vercel.app](astro-portfolio-template-gonzalochale.vercel.app)**
+**[litefolio.vercel.app](https://litefolio.vercel.app)**
 
 ## Preview
 
