@@ -25,9 +25,9 @@ Alternatively, you can clone the project directly from this repo to your local s
 ### 1. Clone the repo
 
 ```bash
-git clone git@github.com:gonzalochale/astro-portfolio-template.git myPortfolio
+git clone git@github.com:gonzalochale/litefolio.git myPortfolio
 # or
-git clone git@github.com:gonzalochale/astro-portfolio-template.git .
+git clone git@github.com:gonzalochale/litefolio.git .
 ```
 
 The `.` will clone it to the current directory so make sure you are inside your project folder first.
