@@ -2,38 +2,74 @@
 import Image from "astro/components/Image.astro";
 import cv from "@cv";
 
-const { projects } = cv;
+const {
+  personalProjects: { sectionLabel, projects },
+} = cv;
 ---
 
 <section
-  class="relative w-full flex flex-col gap-10 items-center justify-center px-4 py-20 sm:py-24 border-t border-b bg-card"
+  class="relative w-full flex flex-col gap-10 items-center justify-center px-4 py-20 sm:py-24 border-b bg-card"
 >
   <h2
     class="absolute top-[-20px] h-10 flex items-center px-2 py-1 rounded-full border text-foreground text-sm sm:text-normal md:text-lg tracking-tighter bg-card"
   >
-    My Projects
+    {sectionLabel}
   </h2>
 
   <div
-    class="flex gap-3 sm:gap-5 snap-x snap-mandatory p-4 sm:px-10 pb-10 pointer-events-auto overflow-scroll"
+    class="flex gap-5 sm:gap-8 snap-x snap-mandatory p-4 sm:px-10 pb-10 pointer-events-auto overflow-scroll"
   >
     {
       projects.map((project) => (
-        <a
-          href={project.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          class="snap-always snap-center shrink-0 w-[90%] sm:w-[80%] rounded-[0.5rem] sm:rounded-[1rem] bg-card flex flex-col justify-center overflow-hidden perfect-shadow"
-        >
-          <Image
-            src={project.imageUrl}
-            width={1920}
-            height={1080}
-            loading="eager"
-            alt={project.name}
-            class="w-full"
-          />
-        </a>
+        <article class="snap-always snap-center shrink-0 w-[90%] sm:w-[80% flex flex-col gap-10">
+          <div class="max-w-md flex flex-col gap-10">
+            <div class="flex flex-col gap-3">
+              <h1 class="text-foreground text-sm sm:text-normal md:text-lg tracking-tighter">
+                {project.name}
+              </h1>
+              <p class="text-balance text-muted-foreground text-sm sm:text-lg font-light tracking-tighter">
+                {project.description}
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-3">
+              {project.projectSocials.map((social) => (
+                <a
+                  href={social.url}
+                  class="group flex items-center text-muted-foreground text-sm font-medium leading-none hover:text-foreground transition-all duration-300 ease-in-out"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {social.label}
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    class="opacity-0 group-hover:opacity-100 translate-x-[-1] group-hover:translate-x-1 group-hover:-rotate-45 transition-all duration-300 ease-in-out"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                      fill="currentColor"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              ))}
+            </div>
+          </div>
+          <div class="rounded-[0.5rem] sm:rounded-[1rem] bg-card flex flex-col justify-center overflow-hidden perfect-shadow">
+            <Image
+              src={project.imageUrl}
+              width={1920}
+              height={1080}
+              loading="eager"
+              alt={project.name}
+              class="w-full"
+            />
+          </div>
+        </article>
       ))
     }
   </div>

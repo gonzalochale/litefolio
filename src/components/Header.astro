@@ -2,9 +2,9 @@
 import cv from "@cv";
 import { Image } from "astro:assets";
 
-const { basics } = cv;
-
-const { location, socials } = basics;
+const {
+  basics: { location },
+} = cv;
 ---
 
 <header
@@ -29,20 +29,4 @@ const { location, socials } = basics;
       ></path>
     </svg>
   </span>
-  <!-- <nav
-    class="flex gap-4 border h-full items-center justify-center pointer-events-auto"
-  >
-    {
-      socials.map((social) => (
-        <a
-          href={social.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          class="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors duration-300 ease-in-out"
-        >
-          {social.label}
-        </a>
-      ))
-    }
-  </nav> -->
 </header>

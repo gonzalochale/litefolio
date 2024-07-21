@@ -8,12 +8,12 @@ import cv from "@cv";
 import Image from "astro/components/Image.astro";
 
 /* 
-    Logos were provided by "svgl" free and open source icons library.
+    Logo were provided by "svgl" free and open source icons library.
     Link: https://svgl.app/
 */
-const { stack } = cv;
-
-const dobleStack = stack.concat(stack);
+const {
+  stack: { sectionLabel, logos },
+} = cv;
 ---
 
 <section
@@ -22,24 +22,25 @@ const dobleStack = stack.concat(stack);
   <h2
     class="absolute top-[-20px] h-10 flex items-center px-2 py-1 rounded-full border text-foreground text-sm sm:text-normal md:text-lg tracking-tighter bg-card"
   >
-    My Stack
+    {sectionLabel}
   </h2>
-
   <div
     class="w-full h-fit max-w-3xl flex flex-col justify-center select-none overflow-hidden gradient"
   >
     <div class="w-max flex flex-nowrap gap-[4rem] animate-slide-logos">
       {
-        dobleStack.map((logo) => (
-          <Image
-            src={logo.src}
-            alt={logo.alt}
-            width={80}
-            height={80}
-            loading="eager"
-            class="size-20 object-contain"
-          />
-        ))
+        logos
+          .concat(logos)
+          .map((logo) => (
+            <Image
+              src={logo.src}
+              alt={logo.alt}
+              width={80}
+              height={80}
+              loading="eager"
+              class="size-14 object-contain"
+            />
+          ))
       }
     </div>
   </div>

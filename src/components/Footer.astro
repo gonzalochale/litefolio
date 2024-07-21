@@ -1,15 +1,16 @@
 ---
 import cv from "@cv";
 
-const { basics } = cv;
-
-const { socials, name, label } = basics;
+const {
+  basics: { name, label },
+  connect: { socials },
+} = cv;
 
 // icon provided by radix icons
 ---
 
 <footer
-  class="w-full px-4 sm:pt-20 pt-24 pb-10 flex flex-col gap-10 justify-between items-center"
+  class="w-full px-4 sm:pt-20 pt-24 pb-10 flex flex-col gap-10 justify-between items-center bg-card border-t"
 >
   <span
     class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed
