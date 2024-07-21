@@ -14,7 +14,7 @@ This is a free portfolio starter template built with Astro and Tailwind CSS. The
 
 Easily deploy the project with the button below. It will clone the repository to your GitHub account and create a new deployment on your Vercel dashboard.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fgonzalochale%2Fastro-portfolio-template)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fgonzalochale%2Flitefolio)
 
 ## Installation
 
