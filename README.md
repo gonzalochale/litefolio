@@ -1,4 +1,4 @@
-# Astro Portfolio Starter Template
+# Litefolio - Astro Portfolio Starter Template
 
 This is a free portfolio starter template built with Astro and Tailwind CSS. The portfolio configuration is managed through a `cv.json` file.
 
@@ -107,9 +107,8 @@ TailwindCSS is already configured in this repo, so you can start using it withou
 To customize your portfolio, edit the `cv.json` file located in the root directory. Here is an example of how the `cv.json` might look:
 
 ```json
-{
+  {
     "basics": {
-      "showAuroraBackground": false,
       "name": "Gonzalo Chalé",
       "label": "Systems Engineer",
       "image": "https://github.com/gonzalochale.png",
@@ -192,7 +191,7 @@ To customize your portfolio, edit the `cv.json` file located in the root directo
       "imageUrl": "/assets/project.webp",
       "url": "https://ui-library-template.vercel.app/"
     }]
-}
+  }
 ```
 
 ## Contributing
@@ -204,7 +203,7 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 We would like to express our gratitude to the following open-source projects and their contributors:
 
 - **SVG Icons**: Thank you to [SVGL](https://www.svgl.app) for providing the high-quality SVG icons used in this project.
-- **UI Components**: We appreciate the amazing components from [AstroUI](https://astroui.vercel.app) and [AceternityUI](https://ui.aceternity.com/) which helped in building a seamless user interface.
+- **UI Components**: We appreciate the amazing components from [AstroUI](https://astroui.vercel.app) which helped in building a seamless user interface.
 - **Framework and CSS**: Special thanks to the teams behind [Astro](https://astro.build) and [Tailwind CSS](https://tailwindcss.com) for their incredible work in creating powerful tools for modern web development.
 
 Your contributions to the open-source community are invaluable and greatly appreciated. Thank you for making this project possible!

@@ -1,16 +1,9 @@
 ---
-import Shades from "@/components/Shades.astro";
 interface Props {
   title: string;
 }
 
 const { title } = Astro.props;
-
-import cv from "@cv";
-
-const { basics } = cv;
-
-const { showAuroraBackground } = basics;
 ---
 
 <!doctype html>
@@ -26,30 +19,49 @@ const { showAuroraBackground } = basics;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <Shades showAuroraBackground={showAuroraBackground}>
-    <body
-      class="relative flex flex-col w-full min-h-dvh items-center bg-background"
-    >
-      <slot />
-    </body>
-  </Shades>
+  <body
+    class="relative flex flex-col w-full min-h-dvh items-center bg-background"
+  >
+    <slot />
+  </body>
+</html>
 
-  <style is:global>
+<style is:global>
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  @layer base {
+    :root {
+      --background: 0, 0%, 98%;
+      --foreground: 0, 0%, 9%;
+      --card: 0, 0%, 100%;
+      --muted: 0, 0%, 92%;
+      --muted-foreground: 0, 0%, 40%;
+      --accent: 0, 0%, 92%;
+      --border: 220 13% 91%;
+    }
+  }
+
+  @layer base {
     @font-face {
       font-family: "Geist";
       src: url("/fonts/GeistVF.woff") format("woff");
     }
     * {
-      @apply text-foreground border-border;
-      font-family: "Geist", sans-serif;
+      @apply border-border;
     }
-    .perfect-shadow {
-      box-shadow: var(--perfect-shadow);
-      --base: hsl(214 80% 27% / 4%);
-      --shade: hsl(from var(--base) calc(h + 8) 25 calc(l - 5));
-      --perfect-shadow: 0 0 0 1px var(--base), 0 1px 1px -0.5px var(--shade),
-        0 3px 3px -1.5px var(--shade), 0 6px 6px -3px var(--shade),
-        0 12px 12px -6px var(--base), 0 24px 24px -12px var(--base);
+    body {
+      font-family: "Geist", system-ui, sans-serif;
+      @apply bg-background text-foreground;
     }
-  </style>
-</html>
+  }
+  .perfect-shadow {
+    box-shadow: var(--perfect-shadow);
+    --base: hsl(214 80% 27% / 4%);
+    --shade: hsl(from var(--base) calc(h + 8) 25 calc(l - 5));
+    --perfect-shadow: 0 0 0 1px var(--base), 0 1px 1px -0.5px var(--shade),
+      0 3px 3px -1.5px var(--shade), 0 6px 6px -3px var(--shade),
+      0 12px 12px -6px var(--base), 0 24px 24px -12px var(--base);
+  }
+</style>
