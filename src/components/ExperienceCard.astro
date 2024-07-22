@@ -38,16 +38,14 @@ const formattedEndDate = endDate
       >{formattedStartDate} - {formattedEndDate}</time
     >
   </div>
-  <div
-    class="relative flex flex-col gap-5 pb-4 text-muted-foreground md:col-span-3"
-  >
-    <p class="text-sm sm:text-normal md:text-lg tracking-tighter">
+  <div class="relative flex flex-col gap-5 pb-4 md:col-span-3">
+    <p class="text-sm sm:text-normal md:text-lg">
       {summary}
     </p>
-    <ul>
+    <ul class="list-disc">
       {
         highlights.map((highlight) => (
-          <li class="text-muted-foreground text-sm sm:text-normal">
+          <li class="text-muted-foreground text-sm sm:text-normal md:text-lg">
             {highlight}
           </li>
         ))

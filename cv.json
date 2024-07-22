@@ -72,15 +72,17 @@
     "sectionLabel": "My stack",
     "logos": [
       { "src": "/logos/astro.svg", "alt": "AstroJS Logo" },
+      { "src": "/logos/vercel.svg", "alt": "Vercel Logo" },
+      { "src": "/logos/tailwindcss.svg", "alt": "TailwindCSS Logo" },
+      { "src": "/logos/typescript.svg", "alt": "TypeScript Logo" },
+      { "src": "/logos/css.svg", "alt": "CSS Logo" },
+      { "src": "/logos/html5.svg", "alt": "HTML Logo" },
       { "src": "/logos/astro.svg", "alt": "AstroJS Logo" },
-      { "src": "/logos/astro.svg", "alt": "AstroJS Logo" },
-      { "src": "/logos/astro.svg", "alt": "AstroJS Logo" },
-      { "src": "/logos/astro.svg", "alt": "AstroJS Logo" },
-      { "src": "/logos/astro.svg", "alt": "AstroJS Logo" },
-      { "src": "/logos/astro.svg", "alt": "AstroJS Logo" },
-      { "src": "/logos/astro.svg", "alt": "AstroJS Logo" },
-      { "src": "/logos/astro.svg", "alt": "AstroJS Logo" },
-      { "src": "/logos/astro.svg", "alt": "AstroJS Logo" }
+      { "src": "/logos/vercel.svg", "alt": "Vercel Logo" },
+      { "src": "/logos/tailwindcss.svg", "alt": "TailwindCSS Logo" },
+      { "src": "/logos/typescript.svg", "alt": "TypeScript Logo" },
+      { "src": "/logos/css.svg", "alt": "CSS Logo" },
+      { "src": "/logos/html5.svg", "alt": "HTML Logo" }
     ]
   },
   "personalProjects": {

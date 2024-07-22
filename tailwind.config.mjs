@@ -8,11 +8,11 @@ export default {
   theme: {
     extend: {
       animation: {
-        "slide-logos": "slide-logos 90s linear infinite",
+        "slide-logos": "slide-logos 60s linear infinite",
       },
       keyframes: {
         "slide-logos": {
-          to: { transform: "translateX(calc(-50% - 2rem))" },
+          to: { transform: "translateX(calc(-50% - 4rem))" },
         },
         aurora: {
           from: {
