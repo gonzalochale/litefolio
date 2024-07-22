@@ -1,5 +1,6 @@
 ---
 import Image from "astro/components/Image.astro";
+import Section from "@/components/Section.astro";
 import cv from "@cv";
 
 const {
@@ -7,17 +8,9 @@ const {
 } = cv;
 ---
 
-<section
-  class="relative w-full flex flex-col gap-10 items-center justify-center px-4 py-20 sm:py-24 bg-card"
->
-  <h2
-    class="absolute top-[-20px] h-10 flex items-center px-2 py-1 rounded-full border text-foreground text-sm sm:text-normal md:text-lg tracking-tighter bg-card"
-  >
-    {sectionLabel}
-  </h2>
-
+<Section sectionLabel={sectionLabel}>
   <div
-    class="flex gap-5 sm:gap-8 snap-x snap-mandatory p-4 sm:px-10 pb-10 pointer-events-auto overflow-scroll"
+    class="flex gap-5 sm:gap-8 snap-x snap-mandatory p-10 pointer-events-auto overflow-scroll"
   >
     {
       projects.map((project) => (
@@ -73,4 +66,4 @@ const {
       ))
     }
   </div>
-</section>
+</Section>

@@ -1,22 +1,15 @@
 ---
 import cv from "@cv";
 import ExperienceCard from "@/components/ExperienceCard.astro";
+import Section from "@/components/Section.astro";
 
 const {
   experience: { sectionLabel, jobs },
 } = cv;
 ---
 
-<section
-  class="relative w-full flex flex-col gap-10 items-center justify-center px-4 py-20 sm:py-24 bg-card"
->
-  <h2
-    class="absolute top-[-20px] h-10 flex items-center px-2 py-1 rounded-full border text-foreground text-sm sm:text-normal md:text-lg tracking-tighter bg-card"
-  >
-    {sectionLabel}
-  </h2>
-
-  <div class="flex flex-col pointer-events-auto">
+<Section sectionLabel={sectionLabel}>
+  <div class="flex flex-col gap-5 pointer-events-auto">
     {jobs.map((exp) => <ExperienceCard {...exp} />)}
   </div>
-</section>
+</Section>

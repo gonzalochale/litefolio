@@ -1,0 +1,61 @@
+---
+interface SectionProps {
+  sectionLabel: string;
+}
+
+const { sectionLabel } = Astro.props;
+---
+
+<section
+  class="relative w-full flex flex-col gap-10 items-center justify-center px-4 py-20 sm:py-24 bg-card perfect-shadow"
+>
+  <h2
+    class="absolute top-[-20px] h-10 flex items-center px-2 py-1 rounded-full text-foreground text-sm sm:text-normal md:text-lg tracking-tighter bg-card perfect-shadow"
+  >
+    {sectionLabel}
+  </h2>
+  <slot />
+  <div
+    class="-z-10 absolute w-[120%] h-full border-dashed border-t border-b x-gradient"
+  >
+  </div>
+  <div
+    class="-z-10 absolute w-full h-[120%] border-dashed border-l border-r y-gradient"
+  >
+  </div>
+</section>
+
+<style>
+  .x-gradient {
+    mask: linear-gradient(
+      90deg,
+      transparent,
+      black 10%,
+      black 90%,
+      transparent
+    );
+    webkitmask: linear-gradient(
+      90deg,
+      transparent,
+      black 20%,
+      black 80%,
+      black transparent
+    );
+  }
+  .y-gradient {
+    mask: linear-gradient(
+      180deg,
+      transparent,
+      black 10%,
+      black 90%,
+      transparent
+    );
+    webkitmask: linear-gradient(
+      90deg,
+      transparent,
+      black 20%,
+      black 80%,
+      black transparent
+    );
+  }
+</style>

@@ -22,19 +22,17 @@ const formattedEndDate = endDate
   : "Today";
 ---
 
-<div
-  class="relative max-w-xl p-10 flex flex-col gap-10 border-l-2 border-foreground"
->
+<div class="max-w-xl p-10 flex flex-col gap-10 bg-background rounded-[1rem]">
   <div class="md:col-span-2 flex flex-col gap-3">
     <div class="flex flex-col gap-1">
-      <h3 class="text-muted-foreground text-sm sm:text-normal">
+      <h3 class="text-muted-foreground text-sm sm:text-normal tracking-tighter">
         {company}
       </h3>
-      <h4 class="text-sm sm:text-normal md:text-lg tracking-tighter">
+      <h4 class="text text-sm sm:text-normal md:text-lg tracking-tighter">
         {position}
       </h4>
     </div>
-    <time class="text-xs text-muted-foreground"
+    <time class="text-sm sm:text-normal tracking-tighter text-muted-foreground"
       >{formattedStartDate} - {formattedEndDate}</time
     >
   </div>
@@ -45,13 +43,11 @@ const formattedEndDate = endDate
     <ul class="list-disc">
       {
         highlights.map((highlight) => (
-          <li class="text-muted-foreground text-sm sm:text-normal md:text-lg">
+          <li class="text-muted-foreground text-xs sm:text-sm md:text-normal">
             {highlight}
           </li>
         ))
       }
     </ul>
   </div>
-  <span class="absolute size-3 rounded-full bg-foreground top-0 left-[-7px]"
-  ></span>
 </div>
