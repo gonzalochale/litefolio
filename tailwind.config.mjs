@@ -12,7 +12,7 @@ export default {
       },
       keyframes: {
         "slide-logos": {
-          to: { transform: "translateX(calc(-50% - 4rem))" },
+          to: { transform: "translateX(calc(-50% - 2rem))" },
         },
         aurora: {
           from: {
