@@ -1,10 +1,10 @@
-# Litefolio - Astro Portfolio Starter Template
+|# Litefolio - Astro Portfolio Starter Template
 
 This is a free portfolio starter template built with Astro and Tailwind CSS.
 
 ## Live Demo
 
-**[litefolio.vercel.app](https://litefolio.vercel.app)**
+**[litefolio.gonzalochale.com](https://litefolio.gonzalochale.com)**
 
 ## Preview
 
