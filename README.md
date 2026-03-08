@@ -1,4 +1,4 @@
-|# Litefolio - Astro Portfolio Starter Template
+# Litefolio - Astro Portfolio Starter Template
 
 This is a free portfolio starter template built with Astro and Tailwind CSS.
 
