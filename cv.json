@@ -1,13 +1,13 @@
 {
   "basics": {
-    "name": "Gonzalo Chalé",
+    "name": "CH",
     "label": "Systems Engineer",
     "image": "https://github.com/gonzalochale.png",
     "summary": "This is a starter template web portfolio. It is designed to be a starting point to showcase your work and help you stand out from the crowd. Perfect for developers, designers, and other professionals.",
     "location": {
-      "city": "Cancún",
-      "countryCode": "MX",
-      "country": "México"
+      "city": "SHANGHAI",
+      "countryCode": "ZH",
+      "country": "China"
     }
   },
   "connect": {
